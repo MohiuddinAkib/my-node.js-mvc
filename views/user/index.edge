@@ -1,0 +1,30 @@
+@layout('layouts.app')
+
+@section('content')
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table mt-5 table-bordered">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Created at</th>
+          </tr>
+        </thead>
+        <tbody>
+          @each(user in users)
+            <tr>
+              <td>{{ user.name }}</td>
+              <td>{{ user.email }}</td>
+              <td>{{ user.createdAt }}</td>
+            </tr>
+            @else
+            <tr>
+              <td colspan="3">No users to show</td>              
+            </tr>
+            @endeach
+        </tbody>
+      </table>
+    </div>
+  </div>
+@endsection

@@ -1,0 +1,22 @@
+{
+  "name": "my-mini-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "keywords": [],
+  "author": "Mohammad mohiuddin mostafa kamal akib <mohiuddinmostafakamal@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.18.7"
+  },
+  "dependencies": {
+    "edge.js": "^1.1.4",
+    "joi": "^14.3.0",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.3.15",
+    "mongoose-timestamp": "^0.6.0"
+  }
+}
