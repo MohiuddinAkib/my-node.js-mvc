@@ -32,9 +32,10 @@ class UserController {
         res.writeHead(302, {
           Location: 'http://localhost:8000/user/create'
         });
-        return this.parent.view('/user/create', {
+        this.parent.view('/user/create', {
           errors
         });
+        return;
       }
       try {
         const user = await User.create({
@@ -42,7 +43,7 @@ class UserController {
           email: values.email
         });
         if (!user) {
-          errors.creationError = 'User creation unsuccessfull';
+          errors.creationError = 'User creation unsuccessful';
           return this.parent.view('/user/create', {
             errors
           });

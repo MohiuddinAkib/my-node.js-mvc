@@ -8,7 +8,7 @@ class HomeController {
     this.parent.view('welcome', { username: 'mohammad akib' });
   }
 
-  about(id, name) {
+  about(req, res, id, name) {
     console.log('HomeController about', id, name);
   }
 }

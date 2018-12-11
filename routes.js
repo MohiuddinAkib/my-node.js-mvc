@@ -3,6 +3,7 @@ const Route = require('./app/libraries/Route');
 const router = new Route();
 
 router.get('/', 'HomeController@index');
+router.get('/home/about/:id/:name', 'HomeController@about');
 
 router.get('/about', 'AboutController@index');
 router.get('/about/create', 'AboutController@create');

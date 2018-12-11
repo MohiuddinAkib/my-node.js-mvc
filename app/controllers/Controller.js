@@ -54,7 +54,6 @@ class Controller {
 
       // Render template
       const html = edge.render(template, { ...data });
-      this.res.writeHead(200, { 'Content-Type': 'text/html' });
       this.res.write(html);
       this.res.end();
     });
