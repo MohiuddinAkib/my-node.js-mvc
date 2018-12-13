@@ -187,6 +187,16 @@ class UserController {
 }
 ```
 
+To get form data from request body:
+
+```javascript
+
+const data = await this.parent.requestBody();
+
+```
+
+request body will return a promise with your form's field name and it's value containing object.
+
 > ### Up until now there is only two methods for route. So for put method post is used for now
 >
 > **imp note** : whenever any change is made inside .edge file then we have to save again inside any .js file. Else it causes some issue
